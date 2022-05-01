@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section flex">
+      <div id="no-more-urls-header" class="flex hidden">
+        <h1>No more URLS!</h1>
+      </div>
+      <div class="flex">
+        <div class="url-preview">
+          <img id="url-preview" alt="url-preview" />
+        </div>
+      </div>
+      <div class="flex">
+        <div class="button-section">
+          <button id="button-yes" onClick="onClickYes()">Yes</button>
+          <button id="button-no" onClick="onClickNo()">No</button>
+        </div>
+        <div class="button-section">
+          <button id="get-list" onClick="getList()">GetList</button>
+        </div>
+      </div>
+      <div class="flex">
+        <input id="file-select" type="file" accept=".json" />
+      </div>
+    </section>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>

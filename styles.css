@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+#url-preview {
+  max-width: 400px;
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-section button {
+  width: 100px;
+}
