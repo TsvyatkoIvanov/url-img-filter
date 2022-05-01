@@ -84,7 +84,11 @@ function getList() {
   try {
     const favUrlsString = window.localStorage.getItem("favorite-urls");
     favUrls = JSON.parse(favUrlsString);
-    console.log("favUrls: ", favUrls);
+    const a = document.getElementById("a");
+    const file = new Blob([JSON.stringify(favUrls, null, 2)], { type: "json" });
+    a.href = URL.createObjectURL(file);
+    a.download = "d.json";
+    a.click();
   } catch (e) {
     console.log(e);
   }
